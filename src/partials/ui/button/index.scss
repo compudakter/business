@@ -1,0 +1,19 @@
+.btn {
+  display: inline-block;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  padding: 24px 36px;
+  background: var(--primary);
+  color: var(--black);
+  border-radius: 45.5px;
+  &_secondary {
+    background: var(--secondary);
+    color: var(--white);
+  }
+  &_info {
+    background: var(--info);
+    color: var(--black);
+  }
+}

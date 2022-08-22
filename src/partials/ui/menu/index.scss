@@ -1,0 +1,115 @@
+.menu {
+  &__toggler-wrapper {
+    position: relative;
+    right: 0;
+    top: 0;
+    border: 1px solid $black;
+    border-radius: 50%;
+    padding: 10px;
+    z-index: 3;
+    display: none;
+  }
+  &__toggler {
+    position: relative;
+    width: 25px;
+    height: 18px;
+    &:after,
+    &:before,
+    span {
+      position: absolute;
+      background-color: $black;
+      height: 2px;
+      width: 100%;
+      top: 50%;
+    }
+    span {
+      transform: translateY(-50%);
+    }
+    &:after,
+    &:before {
+      content: "";
+    }
+    &:after {
+      top: 0;
+    }
+    &:before {
+      top: 100%;
+    }
+    &._active {
+      span {
+        display: none;
+      }
+      &:after {
+        top: 50%;
+        transform: rotate(45deg);
+      }
+      &:before {
+        top: 50%;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  @media (min-width: 730px) {
+    display: flex;
+    align-items: center;
+    &__list {
+      display: flex;
+      height: 100%;
+    }
+    &__item {
+      &:not(:last-child) {
+        margin-right: 45px;
+      }
+    }
+    &__toggler {
+      display: none;
+    }
+  }
+  @media (max-width: 730px) {
+    margin-left: auto;
+    &__nav {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      background: $white;
+      color: black;
+      top: 0;
+      left: -100vw;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      transition: all 0.2s;
+      &._active {
+        transition: all 0.2s;
+        left: 0;
+        &:after {
+          content: "";
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 84px;
+          background: $white;
+        }
+      }
+    }
+    &__list {
+      width: 100%;
+      height: 100%;
+      padding-top: 149px;
+    }
+    &__item {
+      padding: 1rem;
+      text-align: center;
+      font-family: "Elsie";
+      font-weight: 900;
+      font-size: 22px;
+      letter-spacing: 0.1em;
+    }
+    &__toggler-wrapper {
+      display: block;
+    }
+  }
+}

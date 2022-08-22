@@ -1,0 +1,25 @@
+.header {
+  &__container {
+    padding-top: 40px !important;
+    padding-bottom: 16px !important;
+    border-bottom: 1px solid var(--gray);
+  }
+  &__wrapper {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    margin: 0 40px 0 80px;
+  }
+  &__logo {
+  }
+  &__btn {
+    margin-left: 192px;
+  }
+  &__menu {
+    margin-left: auto;
+  }
+}
+.container {
+}
+.logo {
+}
