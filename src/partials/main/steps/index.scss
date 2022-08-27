@@ -1,0 +1,12 @@
+.steps {
+
+ 
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__step{
+    margin: 10px;
+  }
+}
+ 

@@ -1,7 +1,10 @@
 @import "fragments/common.scss";
+@import "fragments/fonts.scss";
 @import "fragments/ui.scss";
 @import "../partials/header/index.scss";
 @import "../partials/main/intro/index.scss";
+@import "../partials/main/brands/index.scss";
+@import "../partials/main/steps/index.scss";
 @import "../partials/footer/index.scss";
 
 .container {
