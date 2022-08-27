@@ -51,6 +51,10 @@ module.exports = {
         test: /\.s[ac]ss$/,
         use: cssLoader("sass-loader"),
       },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+      },
     ],
   },
   resolve: {},
@@ -68,6 +72,7 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         { from: "src/assets", to: path.resolve(__dirname, "dist/assets") },
+        { from: "src/fonts/fonts", to: path.resolve(__dirname, "dist/fonts") },
       ],
     }),
     new MiniCssExtractPlugin(),
