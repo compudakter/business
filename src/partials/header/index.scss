@@ -18,6 +18,24 @@
   &__menu {
     margin-left: auto;
   }
+  @media(max-width:938px){
+    &__wrapper {
+      margin: 0 ;
+      justify-content: space-between;
+    }
+    &__btn {
+      margin-left: 0;
+    }
+    &__menu {
+      margin-left: 0;
+    }
+  }
+  @media(max-width:670px){
+   
+    &__btn {
+      display: none;
+    } 
+  }
 }
 .container {
 }
