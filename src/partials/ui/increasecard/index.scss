@@ -1,0 +1,149 @@
+.increasecard {
+  background: #ffffff;
+  border: 9px solid #fbe5d3;
+  border-radius: 20px;
+  padding: 15px 30px 30px 30px;
+  max-width: 409px;
+  // .increasecard__header
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  // .increasecard__title1
+
+  &__title1 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--danger);
+  }
+
+  // .increasecard__title2
+
+  &__title2 {
+    max-width: 95px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--dark);
+  }
+
+  // .increasecard__grid
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 60px minmax(75px,175px) 17px;
+    row-gap: 10px;
+    column-gap: 33px;
+    align-items: center;
+  }
+
+  // .increasecard__label
+
+  &__label {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--text-color);
+  }
+
+  // .increasecard__bar
+
+  &__bar {
+    // .increasecard__bar_danger
+    position: relative;
+    background: #f1f5f9;
+    box-shadow: 0px 4px 4px rgba(196, 202, 207, 0.47);
+    border-radius: 66.5px;
+    width: 100%;
+    height:10px;
+    &:after{
+      content: ""; 
+      height: 95%; 
+      position: absolute;
+      border-radius: 66.5px;
+      box-shadow: 0px 4px 4px rgba(185, 202, 217, 0.42);
+    }
+    &_danger {
+      &:after{
+        content: "";
+        width: 60%; 
+        background: var(--danger); 
+      }
+    }
+
+    // .increasecard__bar_info
+
+    &_info {
+      &:after{
+        content: "";
+        width: 30%; 
+        background: var(--secondary); 
+      }
+    }
+
+    // .increasecard__bar_success
+
+    &_success {
+      &:after{
+        content: "";
+        width: 70%; 
+        background: var(--success); 
+         
+      }
+    }
+
+    // .increasecard__bar_warning
+
+    &_warning {
+      &:after{
+      content: "";
+        width: 65%; 
+        background: var(--primary);
+      }
+      }
+  }
+
+  // .increasecard__check
+
+  &__check {
+    // .increasecard__check_warning
+     
+    box-shadow: 0px 4px 4px rgba(34, 149, 255, 0.19);
+    border-radius: 3px;
+    width: 17px;
+    height:17px;
+    &_warning {
+      background: var(--primary);
+    }
+
+    // .increasecard__check_success
+
+    &_success {
+      background:var(--success)
+    }
+
+    // .increasecard__check_info
+
+    &_info {
+      background:var(--secondary)
+    }
+
+    // .increasecard__check_danger
+
+    &_danger {
+      background: var(--danger); 
+    }
+  }
+  @media (max-width: 291px) {
+    padding: 7px 15px 15px 15px;
+    &__grid { 
+      row-gap: 5px;
+      column-gap: 15px; 
+       
+    }
+  }
+}
