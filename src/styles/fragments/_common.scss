@@ -16,6 +16,9 @@ $black: #000;
   --gray: #dcdee0;
   --white: #fff;
   --black: #000;
+  --danger:#ED1864; 
+  --success:#16BD31; 
+
 }
 
 *,
@@ -61,4 +64,25 @@ body {
 ._lock-overflow {
   overflow: hidden;
   height: 100vh;
+}
+
+
+.bluredcard {
+  &__wrapper {
+    position: relative;
+    align-items: center;
+    background: $white;
+    border-radius: 20px;
+    z-index: 2;
+  }
+  &__blur {
+    position: absolute;
+    background: rgba(178, 186, 216, 0.27);
+    filter: blur(20px);
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    top: 10px;
+    left: 10px;
+  }
 }

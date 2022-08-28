@@ -1,1 +1,28 @@
-{}
+{
+    "steps":[
+        {
+           "variant":"warning",
+           "title":["Ideate","Brand Strategy"] , 
+           "text":"We will make new strategy which will work the best",
+            "icon":"compas"
+        },
+        {
+           "variant":"success",
+           "title":["Plan","Proper Approach"] , 
+           "text":"We will make new strategy which will work the best",
+            "icon":"controls"
+        },
+        {
+           "variant":"info",
+           "title":["Explore","Faster & Far"] , 
+           "text":"We will make new strategy   which will work the best",
+            "icon":"eye"
+        },
+        {
+           "variant":"danger",
+           "title":["Grow","To The Peak"] , 
+           "text":"We will make new strategy which will work the best",
+            "icon":"chart"
+        }
+    ]
+}
