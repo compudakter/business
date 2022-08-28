@@ -3,10 +3,17 @@
  
   &__container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content:space-between;
   }
   &__step{
     margin: 10px;
+     
+  }
+  @media (max-width: 1200px) {
+    &__container {
+      justify-content: space-around;
+    }
   }
 }
  

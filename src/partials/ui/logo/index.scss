@@ -4,7 +4,8 @@
   font-size: 36px;
   line-height: 26px;
   display: inline-block;
-  color:var(--black) &_white {
+  color:var(--black);
+  &_white {
     color: var(--white);
   }
 

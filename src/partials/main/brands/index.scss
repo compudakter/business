@@ -11,4 +11,10 @@
   &__brand {
     margin: 10px;
   }
+  @media (max-width: 900px) {
+    &__wrapper { 
+      margin: 0  ;
+      justify-content: space-around;
+    } 
+  }
 } 

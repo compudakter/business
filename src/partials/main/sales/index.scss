@@ -55,4 +55,21 @@
 
   &__btn {
   }
+
+  @media(max-width:725px){
+    &__container {
+      flex-direction: column-reverse;
+    }
+    &__image {
+      width:80%
+       
+    }
+    &__image-bg {
+      transform:unset;
+      margin: 0 auto;
+    }
+    &__content {
+      width: 100%;
+    }
+  }
 }
