@@ -5,6 +5,7 @@
   line-height: 26px;
   display: inline-block;
   color:var(--black);
+  z-index: 3;
   &_white {
     color: var(--white);
   }

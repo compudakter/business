@@ -13,6 +13,7 @@
     position: relative;
     width: 25px;
     height: 18px;
+    cursor: pointer;
     &:after,
     &:before,
     span {
@@ -49,7 +50,9 @@
       }
     }
   }
-
+  &__item {
+   cursor:pointer;
+  }
   @media (min-width: 670px) {
     display: flex;
     align-items: center;
@@ -90,8 +93,9 @@
           top: 0;
           left: 0;
           width: 100%;
-          height: 84px;
+          height: 97px;
           background: $white;
+          border-bottom: 1px solid var(--gray);
         }
       }
     }
