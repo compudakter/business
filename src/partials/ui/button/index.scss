@@ -1,25 +1,31 @@
 .btn {
   display: inline-block;
-  font-weight: 700;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.05em;
   padding: 24px 36px;
-  background: var(--primary);
+  background: var(--primary); 
   color: var(--black);
   border-radius: 45.5px;
+  transition: all 0.2s;
   &_secondary {
     background: var(--secondary);
     color: var(--white);
   }
   &_info {
-    background: var(--info);
-    color: var(--black);
+    &:hover {
+      transition: all 0.2s;
+      background: var(--info);
+      outline:1px solid var(--primary)
+    }
   }
-  @media(max-width:740px){
+  @media (max-width: 740px) {
     padding: 15px 25px;
   }
-  @media(max-width:571px){
+  @media (max-width: 571px) {
     padding: 10px 20px;
   }
 }

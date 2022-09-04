@@ -21,10 +21,32 @@
   &__slider {
     background-color: var(--light);
     padding: 30px;
+    position: relative;
   }
   &__slide {
     position: relative;
     display: flex;
+    opacity: 0;
+  }
+  .swiper-slide{
+    opacity: 0 !important;
+    &.swiper-slide-active{
+      opacity:1 !important;
+    }
+  }
+  &__page{
+    position: absolute;
+    bottom: -40px !important;
+    .swiper-pagination-bullet{
+      width:16px;
+      height:16px;
+      background:var(--dark);
+      opacity:.4;
+      &.swiper-pagination-bullet-active{
+        opacity:1;
+      }
+    } 
+    
   }
   &__quote {
     position: absolute;
